@@ -3,7 +3,7 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.cache_store = :redis_cache_store, {  url: ENV['REDIS_URL']}
+  config.cache_store = :redis_cache_store, { url: ENV['REDIS_URL'] }
   
   # Code is not reloaded between requests.
   config.cache_classes = true
